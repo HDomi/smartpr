@@ -1,0 +1,132 @@
+/*************************************** 
+
+**************767 아이패드 ************
+
+**************************************/
+
+
+
+@media screen and (min-width:767px){
+
+    .input_wrap .tit_input {
+
+        width: 20%;
+
+    }
+
+
+
+    .pop_wrap {
+
+        padding:0 20%;
+
+    }
+
+    
+
+    .header_nav .main_menu {
+
+        
+
+    }
+
+
+
+    .all_menu_wrap .user_img_wrap {
+
+        width: 15%;
+
+    }
+
+
+
+    .list_noti_wrap .tb_left:first-child{
+
+        width: 10%;
+
+    }
+
+
+
+    .all_menu_wrap .btn_wrap.ml {
+
+        margin: 0 0 0 15%;
+
+    }
+
+    div.zigzag:after {
+
+        bottom: -0.95em;
+
+    }
+
+
+
+    div.swiper-slide {
+
+        width:49%;
+
+    }
+
+    div.swiper-slide:nth-child(2n) {
+
+        width: 49%;
+
+    }
+
+
+
+    .pa_app .list_app{
+
+        width: 25%;
+
+        padding-top:25%
+
+    }
+
+
+
+    .search_wrap .tb_left {
+
+        width: 5%;
+
+    }
+
+}
+
+
+
+/*************************************** 
+
+************** 높이가 작은화면에서 ************
+
+**************************************/
+
+
+
+
+
+@media screen and (max-height:610px){
+
+ .p_write .page_bottom_wrap{
+
+    position: static;
+
+ }
+
+ .p_write .main_wrap{
+
+    padding-bottom: 24px;
+
+ }
+
+ .pa_home .swiper-container{
+
+    padding-top:0px;
+
+ }
+
+}
+
+
+

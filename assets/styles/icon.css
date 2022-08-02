@@ -1,0 +1,334 @@
+/* icon */
+
+.icon_b{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+.icon_c{
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+/* 16px */
+.ic_select_down{
+    background: url(../../assets/images/common/ic_select_down.svg);
+    width: 16px;
+    height: 16px;
+    vertical-align: -2px;
+}
+
+.ic_sm_list{
+    background: url(../../assets/images/common/ic_sm_list.svg);
+    width: 16px;
+    height: 16px;
+}
+.ic_sm_calendar{
+    background: url(../../assets/images/common/ic_sm_calendar.svg);
+    width: 16px;
+    height: 16px;
+}
+.ic_sm_graph{
+    background: url(../../assets/images/common/ic_sm_graph.svg);
+    width: 16px;
+    height: 16px;
+}
+
+.ic_sm_list.select{
+    background: url(../../assets/images/common/ic_sm_list_select.svg);
+    width: 16px;
+    height: 16px;
+}
+.ic_sm_calendar.select{
+    background: url(../../assets/images/common/ic_sm_calendar_select.svg);
+    width: 16px;
+    height: 16px;
+}
+.ic_sm_graph.select{
+    background: url(../../assets/images/common/ic_sm_graph_select.svg);
+    width: 16px;
+    height: 16px;
+}
+
+/* 20px */
+.ic_arrow_right{
+    background: url(../../assets/images/common/ic_arrow_right.svg);
+    width:20px;
+    height: 20px;
+}
+.ic_phone{
+    background: url(../../assets/images/common/ic_phone.svg);
+    width:20px;
+    height: 20px;
+}
+.ic_web{
+    background: url(../../assets/images/common/ic_web.svg);
+    width:20px;
+    height: 20px;
+}
+.ic_calendar_sm{
+    background: url(../../assets/images/common/ic_calendar.svg);
+    width:20px;
+    height: 20px;
+}
+.ic_plus_cir{
+    background: url(../../assets/images/common/ic_plus_cir.svg);
+    width: 20px;
+    height:20px;
+}
+.ic_minus_cir{
+    background: url(../../assets/images/common/ic_minus_cir.svg);
+    width: 20px;
+    height:20px;
+}
+
+/* 24px */
+.ic_add{
+    background: url(../../assets/images/common/ic_add.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_back{
+    background: url(../../assets/images/common/ic_back.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_search{
+    background: url(../../assets/images/common/ic_search.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_filter{
+    background: url(../../assets/images/common/ic_filter.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_calendar{
+    background: url(../../assets/images/common/ic_calendar.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_calendar2{
+    background: url(../../assets/images/common/ic_calendar.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_noti{
+    background: url(../../assets/images/common/ic_noti.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_menu{
+    background: url(../../assets/images/common/ic_menu.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_close{
+    background: url(../../assets/images/common/ic_close.svg);
+    width:24px;
+    height: 24px;
+}
+.ic_close_w{
+    background: url(../../assets/images/common/ic_close_w.svg);
+    width:24px;
+    height: 24px;
+}
+
+
+/* 32px */
+.ic_partner_dark{
+    background: url(../../assets/images/common/ic_partner_dark.svg);
+    width:32px;
+    height: 32px;
+}
+
+.ic_stock_dark{
+    background: url(../../assets/images/common/ic_stock_dark.svg);
+    width:32px;
+    height: 32px;
+}
+
+.ic_detail_dark{
+    background: url(../../assets/images/common/ic_detail_dark.svg);
+    width:32px;
+    height: 32px;
+}
+
+.ic_user{
+    background: url(../../assets/images/common/ic_user.svg);
+    width:32px;
+    height: 32px;
+}
+
+/* 32px */
+.ic_sale_color{
+    background: url(../../assets/images/common/ic_sale_color.svg);
+    width:32px;
+    height: 32px;
+}
+.ic_buy_color{
+    background: url(../../assets/images/common/ic_buy_color.svg);
+    width:32px;
+    height: 32px;
+}
+.ic_stock_color{
+    background: url(../../assets/images/common/ic_stock_color.svg);
+    width:32px;
+    height: 32px;
+}
+
+.ic_play{
+    background: url(../../assets/images/common/ic_play.svg);
+    width:32px;
+    height: 32px;
+}
+
+.ic_stop{
+    background: url(../../assets/images/common/ic_stop.svg);
+    width:32px;
+    height: 32px;
+}
+
+
+/* 44px */
+.ic_cam_img{
+    background: url(../../assets/images/common/ic_cam_img.svg);
+    width:44px;
+    height: 44px;
+}
+
+/* 52px */
+.ic_write{
+    background: url(../../assets/images/common/ic_write.svg);
+    width:52px;
+    height: 52px;
+}
+.ic_camera{
+    background: url(../../assets/images/common/ic_camera.svg);
+    width:52px;
+    height: 52px;
+}
+.ic_qr{
+    background: url(../../assets/images/common/ic_qr.svg);
+    width:52px;
+    height: 52px;
+}
+.ic_record{
+    background: url(../../assets/images/common/ic_record.svg);
+    width:52px;
+    height: 52px;
+}
+
+.ic_logo{
+    background: url(../../assets/images/common/ic_logo.svg);
+    width:130px;
+    height: 19px;
+}
+.ic_msg_logo{
+    background: url(../../assets/images/common/ic_msg_logo.svg);
+    background-repeat:no-repeat ;
+    width:150px;
+    height: 19px;
+}
+
+/* 72px */
+.ic_user.round{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color:#eee;
+    text-align:center;
+    line-height: 72px;
+    background-repeat:no-repeat ;
+    background-position: center;
+}
+
+/* 정리전*/
+.ic_login_logo{
+    background: url(../../assets/images/common/ic_login_logo.svg);
+    width: 42px;
+    height: 39px;
+}
+.ic_naver_c{
+    background: url(../../assets/images/common/ic_naver_c.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+}
+.ic_kakao_c{
+    background: url(../../assets/images/common/ic_kakao_c.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.ic_facebook_c{
+    background: url(../../assets/images/common/ic_facebook_c.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 24px;
+}
+.ic_google_c{
+    background: url(../../assets/images/common/ic_google_c.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 16px;
+}
+
+
+.ic_ggs{
+    background: url(../../assets/images/common/ic_ggs.svg);
+    width: 8px;
+    height: 16px;
+}
+.ic_purple_ggs{
+    background: url(../../assets/images/common/ic_purple_ggs.svg);
+    width: 8px;
+    height: 16px;
+}
+
+.ic_calendar_20{
+    background: url(../../assets/images/common/ic_calendar_20.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.ic_calendar_20_2{
+    background: url(../../assets/images/common/ic_calendar_20.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.ic_red_plus{
+    background: url(../../assets/images/common/ic_red_plus.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.ic_blue_minus{
+    background: url(../../assets/images/common/ic_blue_minus.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.ic_blue_in{
+    background: url(../../assets/images/common/ic_blue_in.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 19px;
+}
+
+.ic_red_out{
+    background: url(../../assets/images/common/ic_red_out.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 19px;
+}
+
+.ic_clock{
+    background-image: url(../../assets/images/common/ic_clock.svg);
+    width: 24px;
+    height: 24px;
+}

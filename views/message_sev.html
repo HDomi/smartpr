@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="스마트 패턴장부" />
+    <meta name="keyword" content="스마트 패턴장부" />
+    <title>스마트 패턴장부</title>
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="스마트 패턴장부(Smart Pattern))" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="스마트 패턴장부" />
+    <meta property="og:description" content="스마트 패턴장부" />
+    <meta property="og:image" content="../assets/images/common/og_image.jpg">
+    <meta name="twitter:image" content="../assets/images/common/og_image.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favi/favicon-16x16.png">
+    <link rel="shortcut icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="naver-site-verification" content="37cc8e45a90c6e3ae9d43cee76e1a11ba16ff377" />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/young-ha/webfont-archive@master/css/NanumSquare.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/styles/icon.css">
+    <link rel="stylesheet" href="../assets/styles/libaray.css">
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/resp.css">
+
+    <link rel="stylesheet" href="../assets/styles/style2.css">
+
+    <script src="../assets/scripts/jqery-3.5.1.min.js"></script>
+    <script src="../assets/scripts/common.js"></script>
+    <!-- swiper -->
+    <script src="../assets/scripts/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="bodyb" style="background: #f5f5f5;">
+    <a href="./stack_mgmt.html"><div class="next_btn" style="bottom: 70px;">다음</div></a>
+    <!--팝업창 3개부분-->
+    <div class="popup_wrap">
+        <div class="pp_wrap_time">
+            <div class="popup_box">
+                <input type="hidden" id="type" value=""/>
+                <a href="#a"><div class="icon_b ic_clock"></div></a>
+                <div class="time_title">시간을 입력해주세요.</div>
+                <div class="time_pop">
+                    <div class="time_box">
+                        <input type="text" name="time" id="set_time" placeholder="00" maxlength="2">
+                    </div>
+                    <p class="ddam">:</p>
+                    <div class="minute_box">
+                        <input type="text" name="time" id="set_minute" placeholder="00" maxlength="2">
+                    </div>
+                    <div class="dt_box">
+                        <p class="ojeon"><a href="#a">오전</a></p>
+                        <p class="ohu"><a href="#a"><span>오후</span></a></p>
+                    </div>
+                </div>
+                <div class="popup_bot">
+                    <a href="#a"><p class="time_cancel_btn cancel_btn">취소</p></a>
+                    <a href="#a"><p class="time_next_btn">확인</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_wrap">
+        <div class="pp_wrap_date">
+        <div class="popup_box2">
+            <a href="#a"><div class="icon_b ic_calendar_20_2"></div>
+            <div class="date_title">요일을 입력해주세요.</div>
+            <div class="swiper-container date_swiper">
+                <div class="swiper-wrapper">
+                    <div class="date_slide swiper-slide" data-data="월" data-index="0">월</div>
+                    <div class="date_slide swiper-slide" data-data="화" data-index="1">화</div>
+                    <div class="date_slide swiper-slide" data-data="수" data-index="2">수</div>
+                    <div class="date_slide swiper-slide" data-data="목" data-index="3">목</div>
+                    <div class="date_slide swiper-slide" data-data="금" data-index="4">금</div>
+                    <div class="date_slide swiper-slide" data-data="토" data-index="5">토</div>
+                    <div class="date_slide swiper-slide" data-data="일" data-index="6">일</div>
+                </div>
+            </div>
+            <div class="popup_box3">
+                <input type="hidden" id="type" value=""/>
+                <a href="#a"><div class="icon_b ic_clock"></div></a>
+                <div class="time_title">시간을 입력해주세요.</div>
+                <div class="time_pop">
+                    <div class="time_box">
+                        <input type="text" name="time" id="set_time2" placeholder="00" maxlength="2">
+                    </div>
+                    <p class="ddam">:</p>
+                    <div class="minute_box">
+                        <input type="text" name="time" id="set_minute2" placeholder="00" maxlength="2">
+                    </div>
+                    <div class="dt_box">
+                        <p class="ojeon"><a href="#a">오전</a></p>
+                        <p class="ohu"><a href="#a"><span>오후</span></a></p>
+                    </div>
+                </div>
+                <div class="popup_bot">
+                    <a href="#a"><p class="date_time_cancel_btn cancel_btn">취소</p></a>
+                    <a href="#a"><p class="date_time_next_btn">확인</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="popup_wrap">
+        <div class="pp_wrap_month">
+        <div class="popup_box4">
+            <a href="#a"><div class="icon_b ic_calendar_20_2"></div>
+            <div class="month_title">날짜를 입력해주세요.</div>
+            <div class="swiper-container month_swiper">
+                <div class="swiper-wrapper">
+                    <div class="month_slide swiper-slide" data-data="1" data-index="0">1</div>
+                    <div class="month_slide swiper-slide" data-data="2" data-index="1">2</div>
+                    <div class="month_slide swiper-slide" data-data="3" data-index="2">3</div>
+                    <div class="month_slide swiper-slide" data-data="4" data-index="3">4</div>
+                    <div class="month_slide swiper-slide" data-data="5" data-index="4">5</div>
+                    <div class="month_slide swiper-slide" data-data="6" data-index="5">6</div>
+                    <div class="month_slide swiper-slide" data-data="7" data-index="6">7</div>
+                    <div class="month_slide swiper-slide" data-data="8" data-index="7">8</div>
+                    <div class="month_slide swiper-slide" data-data="9" data-index="8">9</div>
+                    <div class="month_slide swiper-slide" data-data="10" data-index="9">10</div>
+                    <div class="month_slide swiper-slide" data-data="11" data-index="10">11</div>
+                    <div class="month_slide swiper-slide" data-data="12" data-index="11">12</div>
+                    <div class="month_slide swiper-slide" data-data="13" data-index="12">13</div>
+                    <div class="month_slide swiper-slide" data-data="14" data-index="13">14</div>
+                    <div class="month_slide swiper-slide" data-data="15" data-index="14">15</div>
+                    <div class="month_slide swiper-slide" data-data="16" data-index="15">16</div>
+                    <div class="month_slide swiper-slide" data-data="17" data-index="16">17</div>
+                    <div class="month_slide swiper-slide" data-data="18" data-index="17">18</div>
+                    <div class="month_slide swiper-slide" data-data="19" data-index="18">19</div>
+                    <div class="month_slide swiper-slide" data-data="20" data-index="19">20</div>
+                    <div class="month_slide swiper-slide" data-data="21" data-index="20">21</div>
+                    <div class="month_slide swiper-slide" data-data="22" data-index="21">22</div>
+                    <div class="month_slide swiper-slide" data-data="23" data-index="22">23</div>
+                    <div class="month_slide swiper-slide" data-data="24" data-index="23">24</div>
+                    <div class="month_slide swiper-slide" data-data="25" data-index="24">25</div>
+                    <div class="month_slide swiper-slide" data-data="26" data-index="25">26</div>
+                    <div class="month_slide swiper-slide" data-data="27" data-index="26">27</div>
+                    <div class="month_slide swiper-slide" data-data="28" data-index="27">28</div>
+                    <div class="month_slide swiper-slide" data-data="29" data-index="28">29</div>
+                    <div class="month_slide swiper-slide" data-data="30" data-index="29">30</div>
+                    <div class="month_slide swiper-slide" data-data="31" data-index="30">31</div>
+                </div>
+            </div>
+            <div class="popup_box3">
+                <input type="hidden" id="type" value=""/>
+                <a href="#a"><div class="icon_b ic_clock"></div></a>
+                <div class="time_title">시간을 입력해주세요.</div>
+                <div class="time_pop">
+                    <div class="time_box">
+                        <input type="text" name="time" id="set_time3" placeholder="00" maxlength="2">
+                    </div>
+                    <p class="ddam">:</p>
+                    <div class="minute_box">
+                        <input type="text" name="time" id="set_minute3" placeholder="00" maxlength="2">
+                    </div>
+                    <div class="dt_box">
+                        <p class="ojeon"><a href="#a">오전</a></p>
+                        <p class="ohu"><a href="#a">오후</a></p>
+                    </div>
+                </div>
+                <div class="popup_bot">
+                    <a href="#a"><p class="month_time_cancel_btn cancel_btn">취소</p></a>
+                    <a href="#a"><p class="month_time_next_btn">확인</p></a>
+                </div>
+            </div>
+        </div></div>
+    </div>
+    <!--팝업창 3개부분 끝-->
+
+    <div class="msg_wrap">
+            <div class="page_top_wrap tit trans" id="aaa">
+                <div class="table_wrap">
+                    <div class="tb_left">
+                        <a class="icon_b ic_back btn_close" href=""></a>
+                    </div>
+                </div>
+                <header class="page_tit_wrap">
+                    <div class="tb_left">
+                        <h2 class="tit_page">문자 안내 서비스 설정</h2>
+                    </div>
+                </header>
+            </div>
+        <div class="msg_ka_cnt_wrap">
+            <div class="msg_cnt">
+                <div class="setting_bar2" id="setting_msg">
+                    <p class="btn_title barbtn_msg">문자로 받기</p>
+                    <label class="switch">
+                        <input type="checkbox" id="bring_msg" class="bar_onf_msg">
+                        <span class="slider round"></span>
+                    </label>
+                    <ul class="ul_hide" id="info_msg" style="display: none;">
+                        <div class="msg_line_top"></div>
+                        <li>
+                            <div class="msgcnt">
+                                <p class="msgcnt_title1">일별 문자안내<a href="#a" class="gs_time"><span >></span></p>
+                                <p class="msg_txt ms_time">매일 오전 10시 15분</p></a>
+                                <label class="switch2">
+                                    <input type="checkbox" class="time_popup_btn ms_time_tog">
+                                    <span class="slider2 round"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="msg_line"></div>
+                        <li>
+                            <div class="msgcnt">
+                                <p class="msgcnt_title">주별 문자안내<a href="#a" class="gs_date"><span >></span></p>
+                                <p class="msg_txt ms_date">매주 수요일 10시 15분</p></a>
+                                <label class="switch2">
+                                    <input type="checkbox"class="date_popup_btn ms_date_tog">
+                                    <span class="slider2 round"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="msg_line"></div>
+                        <li>
+                            <div class="msgcnt">
+                                <p class="msgcnt_title">월별 문자안내<a href="#a" class="gs_month"><span>></span></p>
+                                <p class="msg_txt ms_month">매월 27일 10시 15분</p></a>
+                                <label class="switch2">
+                                    <input type="checkbox" class="month_popup_btn ms_month_tog">
+                                    <span class="slider2 round"></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="msg_cnt2">
+                <div class="setting_bar2" id="setting_kakao">
+                    <p class="btn_title barbtn_ka">카카오톡으로 받기</p>
+                    <label class="switch">
+                        <input type="checkbox" id="bring_kakao" class="bar_onf_ka">
+                        <span class="slider round"></span>
+                    </label>
+                    <ul class="ul_hide" id="info_kakao" style="display: none;">
+                        <div class="msg_line_top"></div>
+                        <li>
+                            <div class="msgcnt">
+                                <p class="msgcnt_title1">일별 문자안내<a href="#a" class="gs_time"><span >></span></p>
+                                <p class="msg_txt ka_time">매일 오후 10시 15분</p></a>
+                                <label class="switch2">
+                                    <input type="checkbox" class="time_popup_btn ka_time_tog">
+                                    <span class="slider2 round"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="msg_line"></div>
+                        <li>
+                            <div class="msgcnt">
+                                <p class="msgcnt_title">주별 문자안내<a href="#a" class="gs_date"><span>></span></p>
+                                <p class="msg_txt ka_date">매주 수요일 10시 15분</p></a>
+                                <label class="switch2">
+                                    <input type="checkbox" class="date_popup_btn ka_date_tog">
+                                    <span class="slider2 round"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="msg_line"></div>
+                        <li>
+                            <div class="msgcnt">
+                                <p class="msgcnt_title">월별 문자안내<a href="#a" class="gs_month"><span>></span></p>
+                                <p class="msg_txt ka_month">매월 27일 10시 15분</p></a>
+                                <label class="switch2">
+                                    <input type="checkbox" class="month_popup_btn ka_month_tog">
+                                    <span class="slider2 round"></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="page_bottom_wrap">
+            <div class="btn_wrap">
+                <a class="btn_solid full" href="#a">저장</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".bar_onf_msg").change(function() {
+            if ($(this).is(":checked")) {
+                $(".barbtn_msg").css('color', '#7900E4');
+            } else {
+                $(".barbtn_msg").css('color', '#777');
+            }
+        });
+        $(".bar_onf_ka").change(function() {
+            if ($(this).is(":checked")) {
+                $(".barbtn_ka").css('color', '#7900E4');
+            } else {
+                $(".barbtn_ka").css('color', '#777');
+            }
+        });
+    </script>
+    <script>
+        $(".ms_time_tog").change(function() {
+            if ($(this).is(":checked")) {
+                $(".ms_time").css('color', '#454545');
+            } else {
+                $(".ms_time").css('color', '#999');
+            }
+        });
+        $(".ms_date_tog").change(function() {
+            if ($(this).is(":checked")) {
+                $(".ms_date").css('color', '#454545');
+            } else {
+                $(".ms_date").css('color', '#999');
+            }
+        });
+        $(".ms_month_tog").change(function() {
+            if ($(this).is(":checked")) {
+                $(".ms_month").css('color', '#454545');
+            } else {
+                $(".ms_month").css('color', '#999');
+            }
+        });
+
+
+        $(".ka_time_tog").change(function() {
+            if ($(this).is(":checked")) {
+                $(".ka_time").css('color', '#454545');
+            } else {
+                $(".ka_time").css('color', '#999');
+            }
+        });
+        $(".ka_date_tog").change(function() {
+            if ($(this).is(":checked")) {
+                $(".ka_date").css('color', '#454545');
+            } else {
+                $(".ka_date").css('color', '#999');
+            }
+        });
+        $(".ka_month_tog").change(function() {
+            if ($(this).is(":checked")) {
+                $(".ka_month").css('color', '#454545');
+            } else {
+                $(".ka_month").css('color', '#999');
+            }
+        });
+    </script>
+    <script>
+         $(".ojeon").click(function() {
+            $(".ojeon").css('color', '#7900E4');
+            $(".ohu").css('color', '#9b8c8c');
+        });
+        $(".ohu").click(function() {
+            $(".ojeon").css('color', '#9b8c8c');
+            $(".ohu").css('color', '#7900E4');
+        });
+    </script>
+    <script>
+        $("#set_time").click(function() {
+           $(".time_box").css('border', '#7900E4 2px solid');
+           $(".minute_box").css('border', '0px');
+       });
+       $("#set_minute").click(function() {
+           $(".minute_box").css('border', '#7900E4 2px solid');
+           $(".time_box").css('border', '0px');
+       });
+   </script>
+       <script>
+        $("#set_time2").click(function() {
+           $(".time_box").css('border', '#7900E4 2px solid');
+           $(".minute_box").css('border', '0px');
+       });
+       $("#set_minute2").click(function() {
+           $(".minute_box").css('border', '#7900E4 2px solid');
+           $(".time_box").css('border', '0px');
+       });
+   </script>
+       <script>
+        $("#set_time3").click(function() {
+           $(".time_box").css('border', '#7900E4 2px solid');
+           $(".minute_box").css('border', '0px');
+       });
+       $("#set_minute3").click(function() {
+           $(".minute_box").css('border', '#7900E4 2px solid');
+           $(".time_box").css('border', '0px');
+       });
+   </script>
+    <script>
+        $("#bring_msg").change(function() {
+            if ($(this).is(":checked")) {
+                $("#info_msg").show();
+                $("#setting_msg").removeClass("setting_bar2").addClass("setting_bar");
+            } else {
+                $("#info_msg").hide();
+                $("#setting_msg").removeClass("setting_bar").addClass("setting_bar2");
+            }
+        });
+
+        $("#bring_kakao").change(function() {
+            if ($(this).is(":checked")) {
+                $("#info_kakao").show();
+                $("#setting_kakao").removeClass("setting_bar2").addClass("setting_bar");
+            } else {
+                $("#info_kakao").hide();
+                $("#setting_kakao").removeClass("setting_bar").addClass("setting_bar2");
+            }
+        });
+
+        var date_swiper, month_swiper;
+
+        $(".gs_time").click(function() {    
+            $(".pp_wrap_time").fadeIn();
+        });
+        $(".gs_date").click(function() {
+            $(".pp_wrap_date").fadeIn();
+
+            date_swiper = new Swiper('.date_swiper', {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                direction: 'horizontal',
+                centeredSlides: true,
+                slideToClickedSlide: true,
+            });
+            
+            date_swiper.slideTo(0);
+        });
+        $(".gs_month").click(function() {
+            $(".pp_wrap_month").fadeIn();
+
+            month_swiper = new Swiper('.month_swiper', {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                direction: 'horizontal',
+                centeredSlides: true,
+                slideToClickedSlide: true,
+            });
+            
+            month_swiper.slideTo(0);
+        });
+
+        $(".time_next_btn").click(function() {
+            $(".pp_wrap_time").fadeOut();
+        });
+        $(".date_time_next_btn").click(function() {
+            let $sel_date = $(".date_swiper").find(".swiper-slide-active");
+            date_swiper.destroy();
+
+            $(".pp_wrap_date").fadeOut();  //확인 누를시 주별 문자안내 설정부분(수정요망)
+        });
+        $(".month_time_next_btn").click(function() {
+            let $sel_date = $(".month_swiper").find(".swiper-slide-active");
+            month_swiper.destroy();
+
+            $(".pp_wrap_month").fadeOut();  //확인 누를시 월별 문자안내 설정부분(수정요망)
+        });
+
+        $(".time_cancel_btn").click(function() {
+            $(".pp_wrap_time").fadeOut();
+        });
+        $(".date_time_cancel_btn").click(function() {
+            date_swiper.destroy();
+
+            $(".pp_wrap_date").fadeOut();
+        });
+        $(".month_time_cancel_btn").click(function() {
+            month_swiper.destroy();
+
+            $(".pp_wrap_month").fadeOut();
+        });
+    </script>
+    
+</body>  
+</html>
